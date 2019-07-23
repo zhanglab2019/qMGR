@@ -1,0 +1,37 @@
+>arr_1
+20,D-loop,F,12S,V,16S,L1,ND1,I,Q,M,ND2,W,A,N,C,Y,COX1,S1,D,COX2,K,ATP8,ATP6,COX3,G,ND3,R,ND4L,ND4,H,S2,L2,ND5,ND6,E,CYTB,T,P
+>arr_1
+18,D-loop,L2,T,P,F,12S,V,16S,L1,ND1,I,Q,M,ND2,W,A,N,C,Y,COX1,S1,D,COX2,K,ATP8,ATP6,COX3,G,ND3,R,ND4L,ND4,H,S2,ND5,ND6,E,CYTB
+>arr_3
+12,D-loop,H,L2,T,P,F,12S,V,16S,L1,ND1,I,Q,M,ND2,W,A,N,C,Y,COX1,S1,D,COX2,K,ATP8,ATP6,COX3,G,ND3,R,ND4L,ND4,S2,ND5,ND6,E,CYTB
+>arr_4
+6,D-loop,H,F,12S,V,16S,L1,ND1,I,Q,M,ND2,W,A,N,C,Y,COX1,S1,D,COX2,K,ATP8,ATP6,COX3,G,ND3,R,ND4L,ND4,S2,L2,ND5,ND6,CYTB,E,T,P
+>arr_5
+1,D-loop,F,12S,V,16S,L1,ND1,I,Q,M,M,ND2,W,A,N,C,Y,COX1,S1,D,COX2,K,ATP8,ATP6,COX3,G,ND3,R,ND4L,ND4,H,S2,L2,ND5,ND6,E,CYTB,T,P
+
+
+
+
+
+############################################################################################
+##  Note: This is the description section. This section only describes the above.          #
+##  In your actual input file, it need to be deleted.                                      #
+##      1. >arr_1, >species_1, or >mitogenome_1, it is followed by a newline              #
+## character to indicate the name of mitochondrial genome arrangement.It                   #
+## is similar to the fasta format.                                                         #
+##      2.In the next line of the name, two types of information should be entered.        #
+##     (1) The number before the first comma indicates the frequency at which the          #
+## arrangement type appears, often one or more times (combining the same                   #
+## arrangements is beneficial to increase the calculation speed).                          #
+##     (2) The first comma is followed by a certain arrangement of mitochondrial genome,   #
+## which is separated by commas between the two genes in gene order.                       #
+##    In addition, to ensure that comparison tasks can be performed between different      #
+## arrangement types, each of your data MUST contain all the genes that need to be         # 
+## considered. They should also be consistent with gene name and quantity of the benchmark.#
+## If a gene is missed in a certain arrangement, our algorithm will                        #
+## treat it as a gene loss (it Does not include the fact that the phenomenon of gene       #
+## loss does exist).                                                                       #
+##    Because the mitochondrial genome is circular, if the order of the genes is not       #
+## wrong,the change in gene initiation will not affect the correct output between multiple #
+## genome arrangements entered.                                                            #
+############################################################################################ 
